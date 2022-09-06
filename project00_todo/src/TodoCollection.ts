@@ -12,7 +12,7 @@ type ItemCounts = {
 }
 export class TodoCollection{
     private nextId: number = 1;
-    private itemMap = new Map<number, TodoItem>(); //generics
+    protected itemMap = new Map<number, TodoItem>(); //generics
 
     constructor(
         public userName: string, 

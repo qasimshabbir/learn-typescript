@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const TodoItem_1 = require("./TodoItem");
-const TodoCollection_1 = require("./TodoCollection");
+const TodoCollectionDB_1 = require("./TodoCollectionDB");
 const inquirer_1 = require("inquirer");
 let todoList = [
     new TodoItem_1.TodoItem(1, 'Buy Flowers'),
@@ -10,7 +10,7 @@ let todoList = [
     new TodoItem_1.TodoItem(4, 'Todo 4'),
     new TodoItem_1.TodoItem(5, 'Todo 5'),
 ];
-let collection = new TodoCollection_1.TodoCollection("Qasim", todoList);
+let collection = new TodoCollectionDB_1.TodoCollectionDB("Qasim", todoList);
 console.clear();
 let newId = collection.addTodo('Go for run');
 let todoItem = collection.getTodoById(newId);

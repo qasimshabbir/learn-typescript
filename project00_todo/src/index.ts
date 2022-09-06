@@ -1,7 +1,9 @@
 import {TodoItem} from './TodoItem';
 import {TodoCollection} from './TodoCollection';
+import { TodoCollectionDB } from './TodoCollectionDB';
 import inquirer from 'inquirer';
-import Choices from 'inquirer/lib/objects/choices';
+
+
 let todoList = [
     new TodoItem(1,'Buy Flowers'),
     new TodoItem(2, 'Todo 2'),
@@ -10,7 +12,7 @@ let todoList = [
     new TodoItem(5, 'Todo 5'),
 ];
 
-let collection = new TodoCollection("Qasim",todoList);
+let collection = new TodoCollectionDB("Qasim",todoList);
 
 
 console.clear();
