@@ -1,4 +1,12 @@
 "use strict";
+const AddSub = {
+    add(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {
+        return a + b;
+    },
+};
 const Calc = {
     add(a, b) {
         return a + b;

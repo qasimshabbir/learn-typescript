@@ -25,6 +25,5 @@ let Calculator: Calculate = {
         return this.left-this.right;
     },
 }
-console.log(Calculator.add);
-
-
+console.log(Calculator.add());
+console.log(Calculator.subtract());
