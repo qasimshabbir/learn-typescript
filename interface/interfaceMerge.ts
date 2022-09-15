@@ -7,21 +7,24 @@ interface Calculate{
 }
 
 interface Calculate{
-    add:(a:number,b:number)=>number;
+    add:()=>number;
 }
 
 interface Calculate{
-    subtract:(a:number,b:number)=>number;
+    subtract:()=>number;
 }
-
+let left = 30;
+let right = 34;
 let Calculator: Calculate = {
     left:20,
     right:30,
-    add(a, b) {
-        return a+b;
+    add() {
+        return this.left+this.right;
     },
-    subtract(a, b) {
-        return a-b;
+    subtract() {
+        return this.left-this.right;
     },
 }
-Calculator.add(Calculator.left, Calculator.right);
+console.log(Calculator.add);
+
+
